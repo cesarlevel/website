@@ -1,0 +1,102 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: left;
+  background-color: #0a1f33;
+  color: #ffffff;
+  font-size: calc(24px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: #ffffff;
+  background: #0a1f33;
+}
+
+::selection {
+  color: #ffffff;
+  background: #0a1f33;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+  max-width: 18ch;
+  line-height: 100%;
+  letter-spacing: -0.5px;
+}
+
+p {
+  justify-self: flex-start;
+  margin: 0;
+}
+
+canvas.is-zoom {
+  transform: scale(4);
+}
+
+a {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+}
+
+li {
+  position: relative;
+}
+
+li .underline {
+  width: 0%;
+  background: #ffffff;
+  height: 3px;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: all 0.2s ease;
+}
+
+li:hover .underline {
+  width: 100%
+}
+
+.content {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  padding: 3vw 5vw;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 1000;
+  overflow: auto;
+  box-sizing: border-box;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 4vh 0 0 0;
+  align-self: flex-end;
+  display: flex;
+}
+
+.link-list li {
+  position: relative;
+  font-size: 70%;
+  margin-left: 20px;
+}
+
+canvas {
+  opacity: 0;
+}
+
+ 
